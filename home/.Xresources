@@ -10,10 +10,10 @@ Xft.lcdfilter: lcddefault
 ! -- URxvt -- !
 ! URxvt*font: -xos4-terminus-medium-*-*-*-18-*-*-*-*-*-u
 ! URxvt*font: -misc-droid sans mono-medium-*-*-*-15-*-*-*-*-*-*-u
-URxvt*font: xft:Ubuntu Mono:size=12
-URxvt*boldFont: xft:Ubuntu Mono:size=12:bold
+URxvt*font: xft:Ubuntu Mono:size=15
+URxvt*boldFont: xft:Ubuntu Mono:size=15:bold
 
-URxvt*transparent: false
+URxvt*transparent: true
 URxvt*shading: 40
 URxvt*background: black
 URxvt*foreground: green
@@ -29,7 +29,7 @@ URxvt*saveLines: 65535
 
 ! -- Extension -- !
 URxvt.iso14755: false
-URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select,tabbed
 URxvt.url-select.launcher:  firefox
 URxvt.url-select.underline: true
 URxvt.clipboard.copycmd: xsel -ib
@@ -48,11 +48,17 @@ URxvt.keysym.C-v:			perl:clipboard:paste_escaped
 UXTerm*utf8Title: true
 UXTerm*faceName: Ubuntu Mono
 UXTerm*renderFont: true
-UXTerm*faceSize: 12
 UXTerm*foreground: green
 UXTerm*cursorColor: green
 UXTerm*background: black
 UXTerm*loginShell: true
 
 
+
+! Tabbed extension configuration
+URxvt.tabbed.tabbar-fg: 8
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    15
+URxvt.tabbed.tab-bg:    8
+URxvt.tabbed.new-button: false
 
