@@ -1,0 +1,16 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Alexey Nikiforov
+	email = nikalexey@gmail.com
+[alias]
+    cm = commit
+    co = checkout
+    br = branch
+    ph = push origin HEAD
+    pl = pull origin HEAD
+    ll = log --graph --decorate --all --pretty='%h %an %ad %s' --date=local
+	df = difftool --dir-diff

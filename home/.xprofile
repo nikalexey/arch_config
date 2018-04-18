@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# load .Xresources file
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
+
+#/usr/bin/light-locker &
+#xbindkeys
+#xcalib -d :0 /usr/share/color/icc/6500.icm
+#/usr/bin/devmon &
+
+#xautolock -time 11 -locker "systemctl suspend" -detectsleep &
+
+#gsettings set org.blueman.plugins.powermanager auto-power-on false
+#blueman-applet &

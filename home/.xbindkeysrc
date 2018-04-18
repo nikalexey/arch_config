@@ -40,11 +40,11 @@
 # Examples of commands:
 
 #"xbindkeys_show" 
-#  control+shift + q
+ # control+shift + q
 
 # set directly keycode (here control + f with my keyboard)
 #"xterm"
-#  c:41 + m:0x4
+ # c:41 + m:0x4
 
 # specify a mouse button
 #"xterm"
@@ -65,25 +65,41 @@
 #"rxvt"
 #  Control + b:2 + Release
 
-"xbacklight -inc 5"
+"xbacklight -inc 2"
     m:0x0 + c:233
     XF86MonBrightnessUp
 
-"xbacklight -dec 5"
+"xbacklight -dec 2"
     m:0x0 + c:232
     XF86MonBrightnessDown
 
-"amixer set Master playback 1dB+"
+#"amixer set Master playback 3276+"
+"pulsemixer --change-volume +5"
     m:0x0 + c:123
     XF86AudioRaiseVolume
 
-"amixer set Master playback 1dB-"
+
+#"amixer set Master playback 3276-"
+"pulsemixer --change-volume -5"
     m:0x0 + c:122
     XF86AudioLowerVolume
 
-"slimlock"
-    m:0x40 + c:9
-    Mod4 + Escape
+"amixer -D pulse set Master 1+ toggle"
+    m:0x0 + c:121
+    XF86AudioMute
+
+"light-locker-command -l"
+    m:0x4 + c:9
+    Control + Escape
+
+
+#"slimlock"
+#    m:0x40 + c:9
+#    Mod4 + Escape
+
+"scrot"
+    m:0x0 + c:107
+    Print
 
 ##################################
 # End of xbindkeys configuration #
