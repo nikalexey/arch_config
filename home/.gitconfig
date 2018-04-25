@@ -14,3 +14,10 @@
     pl = pull origin HEAD
     ll = log --graph --decorate --all --pretty='%h %an %ad %s' --date=local
 	df = difftool --dir-diff
+
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"	
